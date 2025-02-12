@@ -1,0 +1,45 @@
+@use 'vars' as *;
+
+// Mixins for Fonts
+@mixin arial-400 {
+	font-family: 'Arial', sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+// Mixins for Flex layouts
+/*
+Exampels:
+@include flex-layout(flex-start, space-between); // align-items: flex-start; justify-content: space-between;
+* @include flex-layout(center, space-between); 
+* @include flex-layout(flex-end, space-between);
+* @include flex-layout(stretch, space-between);
+* @include flex-layout(flex-start, space-around);
+* @include flex-layout(center, space-around); 
+* @include flex-layout(flex-end, space-around);
+* @include flex-layout(stretch, space-around);
+* @include flex-layout(center, center);
+* @include flex-layout(flex-start, flex-start);
+*/
+
+@mixin flex-layout($align: flex-start, $justify: space-between) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+// Mixins for Grid layouts
+/*
+Exampels:
+* @include grid-layout(2, start, center); // grid-template-columns: repeat(2, 1fr); justify-items: start; align-items: center;
+* @include grid-layout(3, end, flex-start); // grid-template-columns: repeat(3, 1fr); justify-items: end; align-items: flex-start;
+* @include grid-layout(4, center, flex-end); // grid-template-columns: repeat(4, 1fr); justify-items: center; align-items: flex-end;
+*/
+
+@mixin grid-layout($columns: 3, $justify: center, $align: center) {
+	display: grid;
+	grid-template-columns: repeat($columns, 1fr);
+	justify-items: $justify;
+	align-items: $align;
+}

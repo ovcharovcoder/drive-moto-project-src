@@ -1,0 +1,66 @@
+// Styles for Progress bar
+.progress {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.progress__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* Стилі для кожного елемента прогрес-бару */
+.progress__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.progress__title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.progress__text {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	color: #6b7280;
+	line-height: 1.5;
+}
+
+/* Стилі для прогрес-бару */
+.progress__bar {
+	width: 100%;
+	background-color: #e5e7eb; /* сірий фон */
+	height: 10px; /* тонка лінія */
+	border-radius: 9999px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.progress__bar-item {
+	height: 100%;
+	border-radius: 9999px;
+	width: 0%; /* Початковий розмір 0 */
+	transition: width 2s ease-in-out; /* Плавна анімація */
+}
+
+/* Колір для кожного прогрес-бару */
+#progressBar1 {
+	background-color: #1d4ed8; /* синій */
+}
+
+#progressBar2 {
+	background-color: #10b981; /* зелений */
+}
+
+#progressBar3 {
+	background-color: #ef4444; /* червоний */
+}

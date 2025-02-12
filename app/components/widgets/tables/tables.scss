@@ -1,0 +1,18 @@
+/* Styles for the table */
+table {
+	width: 80%;
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+th,
+td {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+th {
+	background-color: #f3f4f6;
+}
+tbody tr:nth-child(even) {
+	background-color: #f9fafb;
+}

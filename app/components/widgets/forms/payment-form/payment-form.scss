@@ -1,0 +1,59 @@
+/* Styles for Payment Form */
+.payment-form-container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #f9fafb;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form-title {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.payment-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+.form-input {
+	padding: 12px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+
+.form-input:focus {
+	border-color: #4caf50;
+}
+
+.payment-button {
+	padding: 12px 20px;
+	font-size: 1.25rem;
+	color: white;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+	background-color: #45a049;
+}

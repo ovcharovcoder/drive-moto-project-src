@@ -1,0 +1,39 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+// Global styles */
+
+// Glue footer to the bottom
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+// END/ Glue footer to the bottom
+
+h1 {
+	font-size: 3rem;
+}
+
+body {
+	@include arial-400;
+	font-size: 1rem; // 16px
+	color: $default;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 0.9375rem; // 0 15px
+}

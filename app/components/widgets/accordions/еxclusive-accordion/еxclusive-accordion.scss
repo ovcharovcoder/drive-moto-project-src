@@ -1,0 +1,43 @@
+// Styles for accordion
+.ex-accordion {
+	margin: 0 auto;
+	overflow: hidden;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 0 40px;
+	}
+	&__item {
+		border-bottom: 1px solid #ddd;
+		border: 1px solid #ddd;
+	}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #f1f1f1;
+		padding: 15px;
+		cursor: pointer;
+	}
+	&__header:hover {
+		background-color: #e0e0e0;
+	}
+	&__content {
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 15px;
+		background-color: #ffffff;
+		transition: max-height 0.3s ease, padding 0.3s ease;
+	}
+	&__content.show {
+		max-height: 200px;
+		padding: 15px;
+	}
+}
+
+.arrow {
+	width: 30px;
+	height: 30px;
+	fill: #000;
+	transition: transform 0.3s ease;
+}
