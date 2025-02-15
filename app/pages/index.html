@@ -3,7 +3,8 @@ Development author: Andriy Ovcharov
 Development date: 12.02.2025 -->
 @@include('header.html')
 <main class="main">
-	<section class="banner-section">
+	<!-- Banner -->
+	<section class="banner-section page-section">
 		<div class="container">
 			<div class="banner-section__inner">
 				<div class="banner-section__slider">
@@ -71,5 +72,57 @@ Development date: 12.02.2025 -->
 			</div>
 		</div>
 	</section>
+	<!-- Banner end -->
+
+	<!-- Search -->
+	<section class="search page-section">
+		<div class="container">
+			<div class="search__inner">
+				<div class="search__tabs">
+					<a class="search__tabs-item search__tabs-item--active" href="#tab-1"
+						>Пошук за номером</a
+					>
+					<a class="search__tabs-item" href="#tab-2">Пошук за маркою</a>
+					<a class="search__tabs-item" href="#tab-3">Пошук за назвою товару</a>
+				</div>
+				<div class="search__content">
+					<div
+						id="tab-1"
+						class="search__content-item search__content-item--active"
+					>
+						<form class="search__content-form" action="">
+							<input
+								class="search__content-input"
+								type="text"
+								placeholder="Введіть номер"
+							/>
+							<button class="search__content-btn" type="submit">Пошук</button>
+						</form>
+					</div>
+					<div id="tab-2" class="search__content-item">
+						<form class="search__content-form" action="">
+							<input
+								class="search__content-input"
+								type="text"
+								placeholder="Введіть марку"
+							/>
+							<button class="search__content-btn" type="submit">Пошук</button>
+						</form>
+					</div>
+					<div id="tab-3" class="search__content-item">
+						<form class="search__content-form" action="">
+							<input
+								class="search__content-input"
+								type="text"
+								placeholder="Введіть назву товару"
+							/>
+							<button class="search__content-btn" type="submit">Пошук</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Search end -->
 </main>
 @@include('footer.html')

@@ -1,6 +1,7 @@
 @use 'vars' as *;
 @use 'mixins' as *;
 
+// Banner
 .banner-section {
 	&__inner {
 		display: flex;
@@ -144,5 +145,54 @@
 		font-size: 18px;
 		padding: 7px 10px;
 		line-height: 21px;
+	}
+}
+
+// Search
+.search__tabs {
+	margin-bottom: 25px;
+	&-item {
+		padding: 12px 25px;
+		transition: transform 0.3s ease-in-out;
+	}
+	&-item--active {
+		border-radius: 5px;
+		background-color: $light-grey;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.search__content {
+	&-item {
+		display: none;
+	}
+	&-item--active {
+		display: block;
+	}
+	&-form {
+		display: flex;
+	}
+	&-input {
+		@include sf($weight: 400);
+		font-size: 16px;
+		line-height: 19px;
+		background-color: $light-grey;
+		border-radius: 3px;
+		padding: 5px 20px;
+		width: 100%;
+	}
+	&-input::placeholder {
+		color: $dark-grey;
+	}
+	&-btn {
+		@include sf($weight: 700);
+		font-size: 14px;
+		line-height: 17px;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $accent;
+		padding: 16px 40px;
+		border-radius: 3px;
+		margin-left: -3px;
 	}
 }

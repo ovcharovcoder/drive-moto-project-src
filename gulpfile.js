@@ -34,30 +34,32 @@ const paths = {
 function pages() {
 	console.log('Processing HTML...');
 	return src(paths.htmlSrc)
-	.pipe(plugins.include({ prefix: '@@', basepath: 'app/components/layouts/' }))
-	.pipe(dest('app'))
-	.pipe(plugins.browserSync.reload({ stream: true }));
+		.pipe(
+			plugins.include({ prefix: '@@', basepath: 'app/components/layouts/' })
+		)
+		.pipe(dest('app'))
+		.pipe(plugins.browserSync.reload({ stream: true }));
 }
 
 // Fonts optimization
 function fonts() {
 	const srcPath = 'app/fonts/src/*.*';
 	return src(srcPath)
-	.pipe(plugins.fonter({ formats: ['woff'] }))
-	.pipe(dest('app/fonts'))
-	.pipe(src(srcPath))
-	.pipe(plugins.ttf2woff2())
-	.pipe(dest('app/fonts'));
+		.pipe(plugins.fonter({ formats: ['woff'] }))
+		.pipe(dest('app/fonts'))
+		.pipe(src(srcPath))
+		.pipe(plugins.ttf2woff2())
+		.pipe(dest('app/fonts'));
 }
 
 // Optimize image files
 function images() {
 	return src(paths.imagesSrc)
-	.pipe(plugins.newer({ dest: 'app/img', ext: '.webp' }))
-	.pipe(plugins.if(file => file.extname !== '.svg', plugins.webp()))
-	.pipe(dest('app/img'))
-	.pipe(src('app/img/*.webp'))
-	.pipe(
+		.pipe(plugins.newer({ dest: 'app/img', ext: '.webp' }))
+		.pipe(plugins.if(file => file.extname !== '.svg', plugins.webp()))
+		.pipe(dest('app/img'))
+		.pipe(src('app/img/*.webp'))
+		.pipe(
 			plugins.imagemin([
 				plugins.imagemin.mozjpeg({ quality: 75, progressive: true }),
 				plugins.imagemin.optipng({ optimizationLevel: 5 }),
@@ -65,45 +67,45 @@ function images() {
 					plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
 				}),
 			])
-	)
-	.pipe(dest('app/img'))
-	.pipe(plugins.browserSync.reload({ stream: true }));
+		)
+		.pipe(dest('app/img'))
+		.pipe(plugins.browserSync.reload({ stream: true }));
 }
 
 // Scripts
 function scripts() {
 	return src(paths.scriptsSrc)
-	.pipe(
+		.pipe(
 			plugins.plumber({
 				errorHandler: plugins.notify.onError('Error: <%= error.message %>'),
 			})
-	)
-	.pipe(plugins.newer('app/js/main.min.js'))
-	.pipe(plugins.sourcemaps.init())
-	.pipe(plugins.concat('main.min.js'))
-	.pipe(plugins.if(process.env.NODE_ENV === 'production', plugins.uglify()))
-	.pipe(plugins.sourcemaps.write('.'))
-	.pipe(dest('app/js'))
-	.pipe(plugins.browserSync.reload({ stream: true }));
+		)
+		.pipe(plugins.newer('app/js/main.min.js'))
+		.pipe(plugins.sourcemaps.init())
+		.pipe(plugins.concat('main.min.js'))
+		.pipe(plugins.if(process.env.NODE_ENV === 'production', plugins.uglify()))
+		.pipe(plugins.sourcemaps.write('.'))
+		.pipe(dest('app/js'))
+		.pipe(plugins.browserSync.reload({ stream: true }));
 }
 
 // Styles
 function styles() {
 	return src(paths.stylesSrc)
-	.pipe(
+		.pipe(
 			plugins.plumber({
 				errorHandler: plugins.notify.onError(
-						'SCSS Error: <%= error.message %>'
+					'SCSS Error: <%= error.message %>'
 				),
 			})
-	)
-	.pipe(plugins.sourcemaps.init())
-	.pipe(plugins.scss({ outputStyle: 'compressed' }))
-	.pipe(plugins.postcss())
-	.pipe(plugins.concat('style.min.css'))
-	.pipe(plugins.sourcemaps.write('.'))
-	.pipe(dest('app/css'))
-	.pipe(plugins.browserSync.stream());
+		)
+		.pipe(plugins.sourcemaps.init())
+		.pipe(plugins.scss({ outputStyle: 'compressed' }))
+		.pipe(plugins.postcss())
+		.pipe(plugins.concat('style.min.css'))
+		.pipe(plugins.sourcemaps.write('.'))
+		.pipe(dest('app/css'))
+		.pipe(plugins.browserSync.stream());
 }
 
 // Continuous synchronization
@@ -132,7 +134,7 @@ function watching() {
 	watch(paths.scriptsSrc, scripts);
 
 	// Watching images
-	watch(paths.imagesSrc, function(cb) {
+	watch(paths.imagesSrc, function (cb) {
 		console.log('🖼 Змінено зображення!');
 		images();
 		cb();
@@ -147,16 +149,16 @@ function cleanDist() {
 // Build production-ready assets
 function building() {
 	return src(
-			[
-				'app/css/style.min.css',
-				'app/img/*.*',
-				'app/img/icons/*.*',
-				'app/img/*.svg',
-				'app/fonts/*.*',
-				'app/js/main.min.js',
-				'app/*.html',
-			],
-			{ base: 'app' }
+		[
+			'app/css/style.min.css',
+			'app/img/*.*',
+			'app/img/icons/*.*',
+			'app/img/*.svg',
+			'app/fonts/*.*',
+			'app/js/main.min.js',
+			'app/*.html',
+		],
+		{ base: 'app' }
 	).pipe(dest('dist'));
 }
 
