@@ -1,11 +1,75 @@
-<!-- The site was developed based on the 'Name' figma layout
-Development author:
-Development date: 00.00.2000 -->
+<!-- The site was developed based on the online store 'Drive moto' figma layout
+Development author: Andriy Ovcharov
+Development date: 12.02.2025 -->
 @@include('header.html')
 <main class="main">
-	<h1>Hello, friend!</h1>
-	<p>The future is at your fingertips. Write code!</p>	
-
-
+	<section class="banner-section">
+		<div class="container">
+			<div class="banner-section__inner">
+				<div class="banner-section__slider">
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-1.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-2.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-3.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-4.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-5.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-6.webp"
+							alt="slide"
+						/>
+					</a>
+				</div>
+				<a class="banner-section__item sale-item" href="#">
+					<div class="sale-item__top">
+						<p class="sale-item__top-info">акція</p>
+						<div class="sale-item__top-price">
+							<div class="price price-new sale-item__top-price-new">20 000</div>
+							<div class="price price-old sale-item__top-price-old">23 000</div>
+						</div>
+					</div>
+					<img class="sale-item__img" src="img/sale-img.webp" alt="img" />
+					<h3 class="sale-item__title">
+						Човниковий мотор<br />
+						Suzuki DF9.9BRS
+					</h3>
+					<div class="sale-item__footer">
+						<p class="sale-item__footer-text">Акція діє до</p>
+						<span>31.08.2024</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
 </main>
 @@include('footer.html')

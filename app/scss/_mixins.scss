@@ -1,12 +1,79 @@
 @use 'vars' as *;
+@use 'fonts' as *;
 
 // Mixins for Fonts
-@mixin arial-400 {
-	font-family: 'Arial', sans-serif;
+// SFProDisplay
+@mixin sf($weight: 400) {
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: $weight;
+
+	@if $weight == 500 {
+		font-family: 'SFProDisplay-Medium', sans-serif;
+	}
+	@else if $weight == 600 {
+		font-family: 'SFProDisplay-Semibold', sans-serif;
+	}
+	@else if $weight == 700 {
+		font-family: 'SFProDisplay-Bold', sans-serif;
+	}
+}
+
+// Barlow
+@mixin barlow($weight: 300) {
+	font-family: "Barlow", sans-serif;
+	font-style: normal;
+	font-weight: $weight;
+
+	@if $weight == 400 {
+		font-weight: 400;
+	}
+	@else if $weight == 600 {
+		font-weight: 600;
+	}
+	@else if $weight == 700 {
+		font-weight: 700;
+	}
+}
+
+
+// Proxima Nova
+@mixin proxima($weight: 600) {
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: $weight;
+
+	@if $weight == 700 {
+		font-family: 'ProximaNova-Bold', sans-serif;
+	}
+}
+
+// Staatliches
+@mixin staatliches {
+	font-family: 'Staatliches-Regular', sans-serif;
 	font-weight: 400;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
+
+
+
+// Використання
+//.some-class {
+//	@include sf(400);
+//}
+//
+//.another-class {
+//	@include proxima(700);
+//}
+//
+//.title {
+//	@include staatliches;
+//}
+
+
 
 // Mixins for Flex layouts
 /*

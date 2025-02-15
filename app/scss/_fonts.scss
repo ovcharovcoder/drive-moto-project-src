@@ -1,15 +1,99 @@
 // Fonts
-
-/*
-// OpenSans-Regular
+// SF Pro Display
 @font-face {
-    font-family: "OpenSans-Regular";
+    font-family: "SFProDisplay-Regular";
     font-weight: 400;
     font-style: normal;
     src:
-        local("OpenSans-Regular"),
-        url("../fonts/OpenSans-Regular.woff2") format("woff2"),
-        url("../fonts/OpenSans-Regular.woff") format("woff");
+        local("SFProDisplay-Regular"),
+        url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+        url("../fonts/SFProDisplay-Regular.woff") format("woff");
     font-display: swap;
 }
-*/
+@font-face {
+  font-family: "SFProDisplay-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src:
+      local("SFProDisplay-Medium"),
+      url("../fonts/SFProDisplay-Medium.woff2") format("woff2"),
+      url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay-Semibold";
+  font-weight: 600;
+  font-style: normal;
+  src:
+      local("SFProDisplay-Semibold"),
+      url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+      url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src:
+      local("SFProDisplay-Bold"),
+      url("../fonts/SFProDisplay-Bold.woff2") format("woff2"),
+      url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+// Proxima Nova
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  font-weight: 600;
+  font-style: normal;
+  src:
+      local("ProximaNova-Semibold"),
+      url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
+      url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src:
+      local("ProximaNova-Bold"),
+      url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+      url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+// Staatliches
+@font-face {
+  font-family: "Staatliches-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src:
+      local("Staatliches-Regular"),
+      url("../fonts/Staatliches-Regular.woff2") format("woff2"),
+      url("../fonts/Staatliches-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+// Barlow
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+

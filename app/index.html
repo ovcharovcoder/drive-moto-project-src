@@ -1,26 +1,194 @@
-<!-- The site was developed based on the 'Name' figma layout
-Development author:
-Development date: 00.00.2000 -->
+<!-- The site was developed based on the online store 'Drive moto' figma layout
+Development author: Andriy Ovcharov
+Development date: 12.02.2025 -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  
-  <body>
-    <div class="wrapper">
-    <header class="header">
-  
-    </header>
-	
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap"
+      rel="stylesheet"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+
+<body>
+<div class="wrapper">
+<!--  Header section-->
+  <header class="header">
+    <!-- Header top-->
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Магазини</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Акції</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Доставка та оплата</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="#">
+            <img class="logo__img" src="img/icons/logo.svg" alt="logo"/>
+          </a>
+          <div class="header__info">
+            <address class="header__address">Київ, вул.Мирна, 27</address>
+            <ul class="user-list">
+              <li class="user-list__item">
+                <a href="#" class="user-list__link">
+                  <img src="img/icons/favorites-icon.svg"
+                       alt="favorites-icon">
+                </a></li>
+              <li class="user-list__item">
+                <a href="#"
+                   class="user-list__link"><img
+                    src="img/icons/user-icon.svg"
+                    alt="favorites-icon"></a>
+                <img src="img/" alt=""></li>
+              <li class="user-list__item">
+                <a href="#"
+                   class="user-list__link basket"><img
+                    src="img/icons/basket-icon.svg"
+                    alt="favorites-icon">
+                  <span class="basket__num">1</span>
+                </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header top end -->
+
+    <!-- Header button -->
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <ul class="menu-categories__list">
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Квадроцикли
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Катери
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Гідроциклы
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Човни
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Всюдиходи
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Снігоходи
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Двигуни
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Запчастини
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Header button end -->
+  </header>
+<!--  Header section end-->
 <main class="main">
-	<h1>Hello, friend!</h1>
-	<p>The future is at your fingertips. Write code!</p>	
-
-
+	<section class="banner-section">
+		<div class="container">
+			<div class="banner-section__inner">
+				<div class="banner-section__slider">
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-1.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-2.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-3.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-4.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-5.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-6.webp"
+							alt="slide"
+						/>
+					</a>
+				</div>
+				<a class="banner-section__item sale-item" href="#">
+					<div class="sale-item__top">
+						<p class="sale-item__top-info">акція</p>
+						<div class="sale-item__top-price">
+							<div class="price price-new sale-item__top-price-new">20 000</div>
+							<div class="price price-old sale-item__top-price-old">23 000</div>
+						</div>
+					</div>
+					<img class="sale-item__img" src="img/sale-img.webp" alt="img" />
+					<h3 class="sale-item__title">
+						Човниковий мотор<br />
+						Suzuki DF9.9BRS
+					</h3>
+					<div class="sale-item__footer">
+						<p class="sale-item__footer-text">Акція діє до</p>
+						<span>31.08.2024</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
 </main>
   <footer class="footer">
     <div class="container">
@@ -29,7 +197,12 @@ Development date: 00.00.2000 -->
   </footer>
   </div> 
   <!-- END/ wrapper -->
-  
+<!-- Qquery-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+<!-- Slick.min.js-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <script src="js/main.min.js"></script>
   </body>
 </html>

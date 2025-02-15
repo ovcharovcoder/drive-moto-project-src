@@ -1,2 +1,148 @@
 @use 'vars' as *;
 @use 'mixins' as *;
+
+.banner-section {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 37px;
+	}
+	&__slider {
+		max-width: 870px;
+	}
+	&__slider-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: transparent;
+		z-index: 5;
+		cursor: pointer;
+	}
+	&__slider-btn-prev {
+		left: 20px;
+	}
+	&__slider-btn-next {
+		right: 20px;
+	}
+	&__slider-img {
+		object-fit: cover;
+		min-height: 400px;
+	}
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.slick-dots li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.slick-dots button {
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	width: 11px;
+	height: 11px;
+	border: 1px solid $white;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.slick-active button {
+	background-color: $white;
+}
+
+.sale-item {
+	max-width: 265px;
+	width: 100%;
+	text-align: center;
+	border: 3px solid $light-grey;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__top-info {
+		@include proxima($weight: 700);
+		font-size: 12px;
+		text-transform: uppercase;
+		background-color: $accent;
+		color: $white;
+		padding: 8px 20px;
+	}
+	&__top-price {
+		text-align: right;
+	}
+	&__top-price-new,
+	&__top-price-old {
+		@include barlow($weight: 700);
+		font-size: 27px;
+		line-height: 32px;
+		color: $accent;
+		margin-right: 6px;
+		padding-right: 22px;
+		&::after {
+			position: absolute;
+			content: '';
+			background-image: url(../img/icons/hryvnia_icon-blue.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			width: 21px;
+			height: 21px;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&__top-price-old {
+		@include barlow($weight: 400);
+		color: $grey;
+		line-height: 17px;
+		font-size: 14px;
+		margin-right: 15px;
+		background-image: url(../img/icons/vector-line.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		padding: 2px 5px;
+		display: inline-block;
+		&::after {
+			background-image: url(../img/icons/hryvnia_icon-grey.svg);
+			width: 12px;
+			height: 12px;
+			right: -7px;
+		}
+	}
+	&__img {
+		max-width: 125px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__footer {
+		background-color: $light-grey;
+		padding: 25px 20px;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	&__footer span {
+		@include barlow($weight: 700);
+		color: $accent;
+	}
+	&__title {
+		@include sf($weight: 700);
+		font-size: 18px;
+		padding: 7px 10px;
+		line-height: 21px;
+	}
+}
