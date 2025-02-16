@@ -196,3 +196,67 @@
 		margin-left: -3px;
 	}
 }
+
+.categories {
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); /* Три колонки */
+		gap: 20px;
+	}
+	&__item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		background: #fff;
+		padding: 20px;
+		border: 1px solid $grey;
+		border-radius: 10px;
+		transition: box-shadow 0.3s ease, transform 0.3s ease;
+	}
+	&__item:hover {
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+		transform: translateY(-5px);
+		border: none;
+	}
+	&__item-info {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		min-height: 130px;
+	}
+	&__item-title {
+		@include barlow($weight: 700);
+		font-size: 23px;
+		margin-bottom: 10px;
+	}
+	&__item-text {
+		margin-top: auto;
+		font-size: 14px;
+		line-height: 17px;
+		color: $grey;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			background-image: url('../img/icons/back-icon.svg');
+			background-repeat: no-repeat;
+			width: 6px;
+			height: 9px;
+			top: 50%;
+			margin-left: 3px;
+			transform: translateY(-50%);
+		}
+	}
+	&__item-img {
+		max-width: 200px;
+		height: auto;
+		margin-left: 20px;
+		border-radius: 8px;
+	}
+	&__item-link {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+}
