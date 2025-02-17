@@ -120,6 +120,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 	line-height: inherit;
+	cursor: pointer;
 }
 
 a:active,
@@ -227,4 +228,32 @@ body {
 
 .page-section {
 	margin-bottom: 80px;
+}
+
+.title {
+	@include barlow($weight: 700);
+	font-size: 25px;
+}
+
+.banner-section__slider-btn,
+.product-slider__slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.banner-section__slider-btn-prev {
+	left: 20px;
+}
+.banner-section__slider-btn-next {
+	right: 20px;
+}
+.product-slider__slider-btn-prev {
+	left: -40px;
+}
+.product-slider__slider-btn-next {
+	right: -20px;
 }
