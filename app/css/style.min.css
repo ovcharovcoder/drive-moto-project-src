@@ -314,10 +314,6 @@ body {
   position: relative;
 }
 
-button {
-  letter-spacing: 0.12em;
-}
-
 .page-section {
   margin-bottom: 80px;
 }
@@ -784,6 +780,7 @@ button {
 }
 .product-item__title {
   font-weight: normal;
+  font-size: 18px;
   padding: 0 0 25px;
 }
 .product-item__favorite {
@@ -830,8 +827,7 @@ button {
   height: 22px;
 }
 .product-item__img {
-  width: 200px;
-  height: auto;
+  max-width: 100%;
 }
 .product-item__price {
   font-family: "Barlow", sans-serif;
@@ -944,6 +940,85 @@ button {
 }
 .products__tab.tab--active {
   border-bottom: 2px solid #1c62cd;
+}
+
+.catalog__title {
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 26px;
+}
+.catalog__product-img {
+  max-width: 100%;
+}
+.catalog__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.catalog__filter-items, .catalog__filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.catalog__filter-item {
+  background-color: #f0f0f4;
+  padding: 5px 22px;
+  border-radius: 3px;
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 17px;
+}
+.catalog__filter-select {
+  border: 1px solid #c4c4c4;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-right: 20px;
+}
+.catalog__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.catalog__inner-aside {
+  flex-basis: 290px;
+}
+.catalog__inner-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.pagination {
+  width: 100%;
+}
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+.pagination__list-item {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c4c4c4;
+  padding: 6px 12px;
+  border: 2px solid transparent;
+}
+.pagination__list-item.pagination__list--active {
+  border: 2px solid #1c62cd;
+  padding: 8px 16px;
+  color: #1c62cd;
 }
 
 .footer {
