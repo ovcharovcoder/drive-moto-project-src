@@ -1,4 +1,4 @@
-// Slick Slider
+// Promo slider
 $(function () {
 	initSlickSlider();
 	initSearchTabs();

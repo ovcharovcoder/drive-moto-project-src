@@ -261,3 +261,36 @@ button {
 .product-slider__slider-btn-next {
 	right: -20px;
 }
+
+.slick-slide img {
+	display: inline;
+}
+
+.breadcrumbs {
+	margin-bottom: 40px;
+	&__list-item {
+		position: relative;
+		display: inline-block;
+		padding-right: 20px;
+		margin-right: 5px;
+		font-size: 15px;
+		line-height: 18px;
+		color: $grey;
+	}
+	&__list-item::after {
+		position: absolute;
+		content: '';
+		background-image: url('../img/icons/back-icon.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 10px;
+		height: 10px;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	&__list-item:last-child::after {
+		display: none;
+	}
+}

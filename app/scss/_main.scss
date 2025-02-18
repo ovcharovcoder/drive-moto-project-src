@@ -1,7 +1,7 @@
 @use 'vars' as *;
 @use 'mixins' as *;
 
-// Banner
+// Banner section on main page
 .banner-section {
 	&__inner {
 		display: flex;
@@ -134,7 +134,7 @@
 	}
 }
 
-// Search
+// Search section on main page
 .search__tabs {
 	margin-bottom: 25px;
 	&-item {
@@ -185,6 +185,7 @@
 	}
 }
 
+// Categories section on main page
 .categories {
 	&__inner {
 		display: grid;
@@ -249,15 +250,7 @@
 	}
 }
 
-.products__title {
-	margin-bottom: 25px;
-}
-
-.product-item__wrapper {
-	position: relative;
-	width: 270px;
-}
-
+// Products section on main page
 .product-item {
 	height: 403px;
 	width: 270px;
@@ -266,6 +259,10 @@
 	text-align: center;
 	padding: 50px 20px;
 	transition: all 0.3s ease;
+	&__wrapper {
+		position: relative;
+		width: 270px;
+	}
 	&__title {
 		font-weight: normal;
 		padding: 0 0 25px;
@@ -410,6 +407,9 @@
 }
 
 .products {
+	&__title {
+		margin-bottom: 25px;
+	}
 	&__tabs {
 		margin-bottom: 25px;
 	}
@@ -424,9 +424,7 @@
 	}
 }
 
-.slick-slide img {
-	display: inline;
-}
+// Catalog page
 
 // Footer
 .footer {
