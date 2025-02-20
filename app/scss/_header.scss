@@ -1,0 +1,117 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+.header {
+	&__top-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 122px;
+		@include sf(700);
+	}
+
+	&__info {
+		display: flex;
+	}
+
+	&__address {
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-right: 60px;
+		width: 265px;
+		padding-left: 30px;
+
+		&::before {
+			position: absolute;
+			content: '';
+			background-image: url('../img/icons/address-icon.svg');
+			width: 30px;
+			height: 30px;
+			left: 0;
+			top: -8px;
+		}
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 0 50px;
+	}
+}
+
+.user-list {
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+
+	&__item {
+		padding-left: 10px;
+	}
+}
+
+.basket {
+	position: relative;
+
+	&__num {
+		position: absolute;
+		right: -15px;
+		bottom: 0;
+		width: 20px;
+		height: 20px;
+		@include sf(500);
+		font-size: 10px;
+		line-height: 20px;
+		background-color: $accent;
+		color: $white;
+		border-radius: 50%;
+		text-align: center;
+	}
+}
+
+.header__bottom {
+	margin-bottom: 80px;
+
+	&-inner {
+		background-color: $light-grey;
+	}
+}
+
+.menu-categories__list {
+	min-height: 53px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-categories__link {
+	position: relative;
+	transition: color 0.3s ease, text-shadow 0.3s ease;
+	padding: 15px;
+	text-decoration: none;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		width: 100%;
+		height: 3px;
+		background-color: $accent;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	&:hover {
+		color: $black;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+		&::after {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
+	}
+}

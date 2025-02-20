@@ -1,0 +1,874 @@
+<!-- The site was developed based on the online store 'Drive moto' figma layout
+Development author: Andriy Ovcharov
+Development date: 12.02.2025 -->
+@@include('header.html')
+<main class="main">
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__list-item">
+					<a class="breadcrumbs__list-link" href="/">Головна</a>
+				</li>
+				<li class="breadcrumbs__list-item">
+					<span class="breadcrumbs__list-link" href="#">Гідроцикли</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Catalog -->
+	<section class="catalog page-section">
+		<div class="container">
+			<h1 class="catalog__title">Гідроцикли</h1>
+
+			<!-- Filter -->
+			<div class="catalog__filter">
+				<div class="catalog__filter-items">
+					<button class="catalog__filter-item">Повноприводні</button
+					><button class="catalog__filter-item">від 10 000</button
+					><button class="catalog__filter-item">BRP</button
+					><button class="catalog__filter-item">інші</button>
+				</div>
+				<div class="catalog__filter-btns">
+					<!-- Dropdown list -->
+					<select
+						class="catalog__filter-select filter-style catalog__filter-select-top"
+					>
+						<option class="catalog__filter-option">За популярністю</option>
+						<option class="catalog__filter-option">Виробник</option>
+						<option class="catalog__filter-option">Акційні</option>
+					</select>
+
+					<!-- Show as grid or list -->
+					<button
+						class="catalog__filter-btn-grid catalog__filter-btn catalog__filter-btn--active"
+					>
+						<svg
+							width="23"
+							height="21"
+							viewBox="0 0 23 21"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect
+								x="1"
+								y="1"
+								width="21"
+								height="19"
+								stroke="#2F3035"
+								stroke-width="2"
+							/>
+							<rect x="7" y="6" width="2" height="2" fill="#2F3035" />
+							<rect x="7" y="13" width="2" height="2" fill="#2F3035" />
+							<rect x="14" y="6" width="2" height="2" fill="#2F3035" />
+							<rect x="14" y="13" width="2" height="2" fill="#2F3035" />
+						</svg>
+					</button>
+					<button class="catalog__filter-btn-list catalog__filter-btn">
+						<svg
+							width="25"
+							height="19"
+							viewBox="0 0 25 19"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g opacity="1" fill="#2F3035">
+								<rect x="6" width="19" height="3" rx="1.5" />
+								<rect x="6" y="8" width="19" height="3" rx="1.5" />
+								<rect x="6" y="16" width="19" height="3" rx="1.5" />
+								<rect width="3" height="3" rx="1.5" />
+								<rect y="8" width="3" height="3" rx="1.5" />
+								<rect y="16" width="3" height="3" rx="1.5" />
+							</g>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="catalog__inner">
+				<aside class="catalog__inner-aside aside-filter">
+					<div class="tabs__wrapper">
+						<div class="tabs aside-filter__tabs">
+							<a class="tab aside-filter__tab tab--active" href="#"
+								><span>Параметри</span></a
+							>
+							<a class="tab aside-filter__tab" href="#"
+								><span>За маркою</span></a
+							>
+						</div>
+						<div class="tabs-container aside-filter__container">
+							<div
+								class="tabs-content aside-filter__tabs-content tabs-content--active"
+							>
+								<form class="aside-filter__form">
+									<ul class="aside-filter__list">
+										<!-- Наявність -->
+										<li class="aside-filter__item-drop">
+											<h3
+												class="aside-filter__item-title filter__item-drop-title filter__item-drop-title--active"
+											>
+												Наявність
+											</h3>
+											<div class="aside-filter__content">
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														В наявності
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														На замовлення
+													</label>
+												</div>
+											</div>
+										</li>
+										<!-- Новинки -->
+										<li class="aside-filter__item-drop">
+											<h3
+												class="aside-filter__item-title filter__item-drop-title filter__item-drop-title--active"
+											>
+												Новинки
+											</h3>
+											<div class="aside-filter__content">
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															name="radio"
+															type="radio"
+															checked
+														/>
+														Всі
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															name="radio"
+															type="radio"
+														/>
+														Акції
+													</label>
+												</div>
+											</div>
+										</li>
+
+										<!-- Ціна -->
+										<li class="aside-filter__item-drop">
+											<h3
+												class="aside-filter__item-title filter__item-drop-title filter__item-drop-title--active"
+											>
+												Ціна
+											</h3>
+											<div class="aside-filter__content">
+												<input
+													type="text"
+													class="js-range-slider"
+													name="my_range"
+													value=""
+													data-type="double"
+													data-min="500000"
+													data-max="900000"
+													data-from="500000"
+													data-to="650000"
+												/>
+											</div>
+										</li>
+
+										<!-- Тех. характеристики -->
+										<!-- Потужність -->
+										<li class="aside-filter__item-list">
+											<div class="filter__item-list">
+												<h3 class="filter__item-list-title">Потужність л.с.</h3>
+												<select class="filter-style filter__item-list-select">
+													<option>90</option>
+													<option>130</option>
+													<option>154</option>
+												</select>
+											</div>
+											<!-- Об'єм двигуна -->
+											<div class="filter__item-list">
+												<h3 class="filter__item-list-title">Об'єм двигуна</h3>
+												<select class="filter-style filter__item-list-select">
+													<option>1200 см3</option>
+													<option>1450 см3</option>
+													<option>1812 см3</option>
+												</select>
+											</div>
+											<!-- Макс. швидкість -->
+											<div class="filter__item-list">
+												<h3 class="filter__item-list-title">Макс. швидкість</h3>
+												<select class="filter-style filter__item-list-select">
+													<option>80 км/год</option>
+													<option>90 км/год</option>
+													<option>100 км/год</option>
+												</select>
+											</div>
+											<!-- Кількість місць -->
+											<div class="filter__item-list">
+												<h3 class="filter__item-list-title">Кількість місць</h3>
+												<select class="filter-style filter__item-list-select">
+													<option>1 - 2</option>
+													<option>1 - 3</option>
+													<option>1 - 3</option>
+												</select>
+											</div>
+										</li>
+
+										<!-- Бренд -->
+										<li class="aside-filter__item-drop">
+											<h3
+												class="aside-filter__item-title filter__item-drop-title filter__item-drop-title--active"
+											>
+												Бренд
+											</h3>
+											<div class="aside-filter__content">
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															type="checkbox"
+															checked
+														/>
+														BRP
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															type="checkbox"
+															checked
+														/>
+														Spark 2
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														Spark 3
+													</label>
+												</div>
+												<!-- Show more -->
+												<div class="aside-filter__more">
+													<button class="aside-filter__more-btn" type="button">
+														Показати ще
+													</button>
+												</div>
+											</div>
+										</li>
+
+										<!-- Модель -->
+										<li class="aside-filter__item-drop">
+											<h3
+												class="aside-filter__item-title filter__item-drop-title filter__item-drop-title--active"
+											>
+												Модель
+											</h3>
+											<div class="aside-filter__content">
+												<input
+													class="aside-filter__search"
+													placeholder="Введіть назву"
+													type="text"
+												/>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															type="checkbox"
+															checked
+														/>
+														Sea-doo Spark 2
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															type="checkbox"
+															checked
+														/>
+														SeaDoo Spark 90
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														SeaDoo GTI 155
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														SeaDoo GTR 230
+													</label>
+												</div>
+												<!-- Show more -->
+												<div class="aside-filter__more">
+													<button class="aside-filter__more-btn" type="button">
+														Показати ще
+													</button>
+												</div>
+											</div>
+										</li>
+
+										<!-- Акції -->
+										<li class="aside-filter__item-drop">
+											<h3
+												class="aside-filter__item-title filter__item-drop-title filter__item-drop-title--active"
+											>
+												Акції
+											</h3>
+											<div class="aside-filter__content">
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														Trade-in
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															type="checkbox"
+															checked
+														/>
+														Розпродаж
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														FreeShip
+													</label>
+												</div>
+											</div>
+										</li>
+
+										<!-- Країни -->
+										<li class="aside-filter__item-drop">
+											<h3
+												class="aside-filter__item-title filter__item-drop-title filter__item-drop-title--active"
+											>
+												Країни
+											</h3>
+											<div class="aside-filter__content">
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															type="checkbox"
+															checked
+														/>
+														Україна
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														Німеччина
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input class="filter-style" type="checkbox" />
+														Франція
+													</label>
+												</div>
+												<div class="aside-filter__content-box">
+													<label class="aside-filter__content-label">
+														<input
+															class="filter-style"
+															type="checkbox"
+															checked
+														/>
+														США
+													</label>
+												</div>
+												<!-- Show more -->
+												<div class="aside-filter__more">
+													<button class="aside-filter__more-btn" type="button">
+														Показати ще
+													</button>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<button class="aside-filter__btn">Обрати</button>
+									<button class="aside-filter__btn-reset">
+										Скинути фільтр
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<!-- Product list -->
+				<div class="catalog__inner-wrapper">
+					<div class="catalog__inner-list">
+						<!-- Catalog product 1 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-1.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 2 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item product-item--sale" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-2.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Blue\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 3 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper product-item__not-available">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-3.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Green\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+						<!-- Catalog product 4 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-1.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 5 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item product-item--sale" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-2.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Blue\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 6 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper product-item__not-available">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-3.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Green\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+						<!-- Catalog product 7 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-1.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 8 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item product-item--sale" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-2.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Blue\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 9 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper product-item__not-available">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-3.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Green\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+						<!-- Catalog product 10 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-1.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 11 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item product-item--sale" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-2.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Blue\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+
+						<!-- Catalog product 12 -->
+						<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+						<div class="product-item__wrapper product-item__not-available">
+							<!-- Favorite btn -->
+							<button class="product-item__favorite"></button>
+							<!-- Basket btn -->
+							<button class="product-item__basket">
+								<img
+									class="product-item__basket-img"
+									src="img/icons/basket-icon-white.svg"
+									alt="backet"
+								/>
+							</button>
+							<!-- Notify about admission -->
+							<a class="product-item__notify-link" href="#"
+								>Повідомити про надходження</a
+							>
+							<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+							<a class="product-item" href="#">
+								<p class="product-item__hover-text">Переглянути товар</p>
+								<!-- Product image -->
+								<img
+									class="product-item__img catalog__product-img"
+									src="img/gidrotsikl-img-3.webp"
+									alt="img"
+								/>
+								<!-- Product title -->
+								<h3 class="product-item__title">
+									Гідроцикл BRP SeaDoo GTI 130hp SE Green\Mango
+								</h3>
+								<!-- Price or message about out of stock item -->
+								<p class="product-item__price">700 000 ₴</p>
+								<p class="product-item__notify-text">немає в наявності</p>
+							</a>
+						</div>
+					</div>
+					<!-- Pagination -->
+					<div class="pagination">
+						<ul class="pagination__list">
+							<li class="pagination__list-item pagination__list--active">
+								<a class="pagination__list-link" href="#">1</a>
+							</li>
+							<li class="pagination__list-item">
+								<a class="pagination__list-link" href="#">2</a>
+							</li>
+							<li class="pagination__list-item">
+								<a class="pagination__list-link" href="#">3</a>
+							</li>
+							<li class="pagination__list-item">
+								<a class="pagination__list-link" href="#">4</a>
+							</li>
+							<li class="pagination__list-item">
+								<a class="pagination__list-link" href="#">5</a>
+							</li>
+							<li class="pagination__list-item pagination__list-item--dots">
+								<span>...</span>
+							</li>
+							<li class="pagination__list-item">
+								<a class="pagination__list-link" href="#">11</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Product list end -->
+			</div>
+		</div>
+	</section>
+</main>
+@@include('footer.html')

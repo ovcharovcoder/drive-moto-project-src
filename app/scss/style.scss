@@ -1,0 +1,16 @@
+// Сonnecting SCSS files for a project
+@use 'vars' as *;
+@use 'mixins';
+@use 'anim';
+@use 'fonts';
+@use 'global';
+@use 'modal';
+@use 'header';
+@use 'footer';
+@use 'slick';
+@use 'rangeslider';
+@use 'formstylertheme';
+@use 'formstyler';
+@use 'rateyo';
+@use 'main';
+@use 'media';

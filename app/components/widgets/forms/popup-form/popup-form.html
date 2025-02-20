@@ -1,0 +1,68 @@
+<!-- Trigger Button -->
+<button id="openFormButton" class="open-form-button">Order Now</button>
+
+<!-- Popup Form -->
+<div id="orderFormPopup" class="order-form-popup">
+	<div class="order-form-container">
+		<h2 class="order-form-title">Place Your Order</h2>
+
+		<form action="#" method="POST" class="order-form">
+			<!-- Name -->
+			<div class="form-group">
+				<label for="name" class="form-label">Your Name</label>
+				<input
+					type="text"
+					id="name"
+					name="name"
+					class="form-input"
+					required
+					placeholder="Enter your name"
+				/>
+			</div>
+
+			<!-- Email -->
+			<div class="form-group">
+				<label for="email" class="form-label">Your Email</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					class="form-input"
+					required
+					placeholder="Enter your email"
+				/>
+			</div>
+
+			<!-- Product Selection -->
+			<div class="form-group">
+				<label for="product" class="form-label">Product</label>
+				<select id="product" name="product" class="form-input">
+					<option value="product1">Product 1</option>
+					<option value="product2">Product 2</option>
+					<option value="product3">Product 3</option>
+				</select>
+			</div>
+
+			<!-- Quantity -->
+			<div class="form-group">
+				<label for="quantity" class="form-label">Quantity</label>
+				<input
+					type="number"
+					id="quantity"
+					name="quantity"
+					class="form-input"
+					required
+					placeholder="Enter quantity"
+				/>
+			</div>
+
+			<!-- Submit Button -->
+			<div class="form-group">
+				<button type="submit" class="form-button">Place Order</button>
+			</div>
+		</form>
+
+		<!-- Close Button -->
+		<button id="closeFormButton" class="close-form-button">X</button>
+	</div>
+</div>

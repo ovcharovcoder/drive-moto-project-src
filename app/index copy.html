@@ -1,0 +1,4095 @@
+<!-- The site was developed based on the online store 'Drive moto' figma layout
+Development author: Andriy Ovcharov
+Development date: 12.02.2025 -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap"
+      rel="stylesheet"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+
+<body>
+<div class="wrapper">
+<!--  Header section-->
+  <header class="header">
+    <!-- Header top-->
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Магазини</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Акції</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Доставка та оплата</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="#">
+            <img class="logo__img" src="img/icons/logo.svg" alt="logo"/>
+          </a>
+          <div class="header__info">
+            <address class="header__address">Київ, вул.Мирна, 27</address>
+            <ul class="user-list">
+              <li class="user-list__item">
+                <a href="#" class="user-list__link">
+                  <img src="img/icons/favorites-icon.svg"
+                       alt="favorites-icon">
+                </a></li>
+              <li class="user-list__item">
+                <a href="#"
+                   class="user-list__link"><img
+                    src="img/icons/user-icon.svg"
+                    alt="favorites-icon"></a>
+                <img src="img/" alt=""></li>
+              <li class="user-list__item">
+                <a href="#"
+                   class="user-list__link basket"><img
+                    src="img/icons/basket-icon.svg"
+                    alt="favorites-icon">
+                  <span class="basket__num">1</span>
+                </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header top end -->
+
+    <!-- Header button -->
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <ul class="menu-categories__list">
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Квадроцикли
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Катери
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Гідроциклы
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Човни
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Всюдиходи
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Снігоходи
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Двигуни
+              </a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">
+                Запчастини
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Header button end -->
+  </header>
+<!--  Header section end-->
+<main class="main">
+	<!-- Banner -->
+	<section class="banner-section page-section">
+		<div class="container">
+			<div class="banner-section__inner">
+				<div class="banner-section__slider">
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-1.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-2.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-3.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-4.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-5.webp"
+							alt="slide"
+						/>
+					</a>
+					<a class="banner-section__slider-item" href="#">
+						<img
+							class="banner-section__slider-img"
+							src="img/banner-slide-6.webp"
+							alt="slide"
+						/>
+					</a>
+				</div>
+				<a class="banner-section__item sale-item" href="#">
+					<div class="sale-item__top">
+						<p class="sale-item__top-info">акція</p>
+						<div class="sale-item__top-price">
+							<div class="price price-new sale-item__top-price-new">20 000</div>
+							<div class="price price-old sale-item__top-price-old">23 000</div>
+						</div>
+					</div>
+					<img class="sale-item__img" src="img/sale-img.webp" alt="img" />
+					<h3 class="sale-item__title">
+						Човниковий мотор<br />
+						Suzuki DF9.9BRS
+					</h3>
+					<div class="sale-item__footer">
+						<p class="sale-item__footer-text">Акція діє до</p>
+						<span>31.08.2024</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Banner end -->
+
+	<!-- Search -->
+	<div class="search page-section">
+		<div class="container">
+			<div class="search__inner">
+				<div class="search__tabs">
+					<a class="tab search__tabs-item tab--active" href="#tab-1"
+						>Пошук за номером</a
+					>
+					<a class="tab search__tabs-item" href="#tab-2">Пошук за маркою</a>
+					<a class="tab search__tabs-item" href="#tab-3"
+						>Пошук за назвою товару</a
+					>
+				</div>
+				<div class="search__content">
+					<div
+						id="tab-1"
+						class="search__content-item tabs-content tabs-content--active"
+					>
+						<form class="search__content-form" action="">
+							<input
+								class="search__content-input"
+								type="text"
+								placeholder="Введіть номер"
+							/>
+							<button class="search__content-btn" type="submit">Пошук</button>
+						</form>
+					</div>
+					<div id="tab-2" class="search__content-item tabs-content">
+						<form class="search__content-form" action="">
+							<input
+								class="search__content-input"
+								type="text"
+								placeholder="Введіть марку"
+							/>
+							<button class="search__content-btn" type="submit">Пошук</button>
+						</form>
+					</div>
+					<div id="tab-3" class="search__content-item tabs-content">
+						<form class="search__content-form" action="">
+							<input
+								class="search__content-input"
+								type="text"
+								placeholder="Введіть назву товару"
+							/>
+							<button class="search__content-btn" type="submit">Пошук</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Search end -->
+
+	<!-- Categories -->
+	<section class="categories page-section">
+		<div class="container">
+			<div class="categories__inner">
+				<!-- Categories item 1 -->
+				<article class="categories__item">
+					<a class="categories__item-link" href="#">
+						<div class="categories__item-info">
+							<h2 class="categories__item-title">Квадроцикли</h2>
+							<p class="categories__item-text">Докладніше</p>
+						</div>
+						<img
+							class="categories__item-img"
+							src="img/categories-img-1.webp"
+							alt="img"
+						/>
+					</a>
+				</article>
+				<!-- Categories item 2  -->
+				<article class="categories__item">
+					<a class="categories__item-link" href="#">
+						<div class="categories__item-info">
+							<h2 class="categories__item-title">Гідроцикли</h2>
+							<p class="categories__item-text">Докладніше</p>
+						</div>
+						<img
+							class="categories__item-img"
+							src="img/categories-img-2.webp"
+							alt="img"
+						/>
+					</a>
+				</article>
+				<!-- Categories item 3  -->
+				<article class="categories__item">
+					<a class="categories__item-link" href="#">
+						<div class="categories__item-info">
+							<h2 class="categories__item-title">Катери</h2>
+							<p class="categories__item-text">Докладніше</p>
+						</div>
+						<img
+							class="categories__item-img"
+							src="img/categories-img-3.webp"
+							alt="img"
+						/>
+					</a>
+				</article>
+				<!-- Categories item 4  -->
+				<article class="categories__item">
+					<a class="categories__item-link" href="#">
+						<div class="categories__item-info">
+							<h2 class="categories__item-title">Снігоходи</h2>
+							<p class="categories__item-text">Докладніше</p>
+						</div>
+						<img
+							class="categories__item-img"
+							src="img/categories-img-4.webp"
+							alt="img"
+						/>
+					</a>
+				</article>
+				<!-- Categories item 5  -->
+				<article class="categories__item">
+					<a class="categories__item-link" href="#">
+						<div class="categories__item-info">
+							<h2 class="categories__item-title">Всюдиходи</h2>
+							<p class="categories__item-text">Докладніше</p>
+						</div>
+						<img
+							class="categories__item-img"
+							src="img/categories-img-5.webp"
+							alt="img"
+						/>
+					</a>
+				</article>
+				<!-- Categories item 6  -->
+				<article class="categories__item">
+					<a class="categories__item-link" href="#">
+						<div class="categories__item-info">
+							<h2 class="categories__item-title">Двигуни</h2>
+							<p class="categories__item-text">Докладніше</p>
+						</div>
+						<img
+							class="categories__item-img"
+							src="img/categories-img-6.webp"
+							alt="img"
+						/>
+					</a>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- Products -->
+	<section class="products page-section">
+		<div class="container">
+			<div class="products__inner">
+				<h2 class="products__title title">Популярні товари</h2>
+				<div class="tabs__wrapper">
+					<!-- Tabs -->
+					<div class="products__tabs tabs">
+						<a class="products__tab tab tab--active" href="#products__tab-1"
+							>запчастини</a
+						>
+						<a class="products__tab tab" href="#products__tab-2">мотори</a>
+						<a class="products__tab tab" href="#products__tab-3">шини</a>
+						<a class="products__tab tab" href="#products__tab-4">електроніка</a>
+						<a class="products__tab tab" href="#products__tab-5">інструменти</a>
+						<a class="products__tab tab" href="#products__tab-6">аксесуари</a>
+					</div>
+					<div class="products__tabs-container tabs-container">
+						<!-- Products tab 1 -->
+						<div
+							id="products__tab-1"
+							class="products__tabs-content tabs-content tabs-content--active"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">500 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 2 -->
+						<div
+							id="products__tab-2"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-5.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Mercury 25 MLH SP човновий мотор
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">129 270 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-6.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Tohatsu MFS25C S човновий мотор
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">168 000 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-7.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Tohatsu M25H S човновий мотор
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">112 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-8.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 850 E-TEC
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">90 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-9.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Двигун ROTAX 900 ACE</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">100 000 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-10.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 900 ACE TURBO
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">120 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-11.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 600R E-TEC
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">90 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-8.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 850 E-TEC
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 3 -->
+						<div
+							id="products__tab-3"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 4 -->
+						<div
+							id="products__tab-4"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 500 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 550 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 500 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 5 -->
+						<div
+							id="products__tab-5"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 6 -->
+						<div
+							id="products__tab-6"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-item__more">
+					<a class="product-item__more-link" href="">Показати ще</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Banner -->
+	<div class="banner page-section">
+		<div class="container">
+			<a class="banner__link" href="#">
+				<img class="banner__img" src="img/banner-img.webp" alt="banner" />
+			</a>
+		</div>
+	</div>
+
+	<!-- Popular -->
+	<section class="products page-section">
+		<div class="container">
+			<div class="products__inner">
+				<h2 class="products__title title">З цим товаром купують</h2>
+				<div class="tabs__wrapper">
+					<!-- Tabs -->
+					<div class="products__tabs tabs">
+						<a class="products__tab tab tab--active" href="#popular__tab-1"
+							>запчастини</a
+						>
+						<a class="products__tab tab" href="#popular__tab-2">мотори</a>
+						<a class="products__tab tab" href="#popular__tab-3">шини</a>
+						<a class="products__tab tab" href="#popular__tab-4">електроніка</a>
+						<a class="products__tab tab" href="#popular__tab-5">інструменти</a>
+						<a class="products__tab tab" href="#popular__tab-6">аксесуари</a>
+					</div>
+					<div class="products__tabs-container tabs-container">
+						<!-- Products tab 1 -->
+						<div
+							id="popular__tab-1"
+							class="products__tabs-content tabs-content tabs-content--active"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">500 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-14.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Амортизатор 165mm Red</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 2 -->
+						<div
+							id="popular__tab-2"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-5.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Mercury 25 MLH SP човновий мотор
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">129 270 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-6.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Tohatsu MFS25C S човновий мотор
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">168 000 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-7.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Tohatsu M25H S човновий мотор
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">112 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-8.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 850 E-TEC
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">90 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-9.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">Двигун ROTAX 900 ACE</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">100 000 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-10.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 900 ACE TURBO
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">120 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-11.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 600R E-TEC
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">90 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-8.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Двигун ROTAX 850 E-TEC
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 3 -->
+						<div
+							id="popular__tab-3"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">650 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-12.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Шина 4.10-6 TT Maiqilin TT грязьова
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 4 -->
+						<div
+							id="popular__tab-4"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 500 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 550 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 600 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 500 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 700 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">1 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-13.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Блок керування (курок газу) BRP
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 5 -->
+						<div
+							id="popular__tab-5"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<!-- Products tab 6 -->
+						<div
+							id="popular__tab-6"
+							class="products__tabs-content tabs-content"
+						>
+							<div class="product-slider">
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 1 -->
+								<article class="product-slider__item">
+									<!-- Added class add a class 'product-item__not-available' to class 'product-item__wrapper' if you need to show that the product is missing-->
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<!-- Add class 'product-item--sale' to class 'product-item' if you need to set up a sale -->
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-1.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 2 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-2.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 3 -->
+								<article class="product-slider__item">
+									<div class="product-item__wrapper">
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-3.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+
+								<!-- Product item 4 -->
+								<article class="product-slider__item">
+									<div
+										class="product-item__wrapper product-item__not-available"
+									>
+										<!-- Favorite btn -->
+										<button class="product-item__favorite"></button>
+										<!-- Basket btn -->
+										<button class="product-item__basket">
+											<img
+												class="product-item__basket-img"
+												src="img/icons/basket-icon-white.svg"
+												alt="backet"
+											/>
+										</button>
+										<!-- Notify about admission -->
+										<a class="product-item__notify-link" href="#"
+											>Повідомити про надходження</a
+										>
+										<a class="product-item product-item--sale" href="#">
+											<p class="product-item__hover-text">Переглянути товар</p>
+											<!-- Product image -->
+											<img
+												class="product-item__img"
+												src="img/product-img-4.webp"
+												alt="img"
+											/>
+											<!-- Product title -->
+											<h3 class="product-item__title">
+												Водонепроникний Рюкзак
+											</h3>
+											<!-- Price or message about out of stock item -->
+											<p class="product-item__price">9 800 ₴</p>
+											<p class="product-item__notify-text">немає в наявності</p>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+  <footer class="footer">
+    <div class="container">
+      <!-- Top -->
+     <div class="footer__top">
+     <div class="footer__top-inner">
+      <div class="footer__top-item">
+        <h6 class="footer__top-title">Підпишіться на нашу розсилку
+          та дізнавайтеся про акції швидше</h6>
+          <form class="footer__form">
+            <input class="footer__form-input" type="text" placeholder="Введіть ваш e-mail:">
+            <button class="footer__form-btn" type="submit">Надіслати</button>
+          </form>
+      </div>
+      <div class="footer__top-item">
+        <h6 class="footer__top-title">Інформація</h6>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Про компанію</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Контакти</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Акції</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Магазини</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__top-item">
+        <h6 class="footer__top-title">Інтернет магазин</h6>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Доставка та самовивіз</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Оплата</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Повернення-обмін</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Новини</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__top-item footer__top-social">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img class="footer__social-img" src="img/icons/instagram-icon.svg" alt="instagram"></a>
+            </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
+              <img class="footer__social-img" src="img/icons/telegram-icon.svg" alt="telegram"></a>
+            </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <img class="footer__social-img" src="img/icons/facebook-icon.svg" alt="facebook"></a>
+            </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Youtube" target="_blank" rel="noopener noreferrer">
+              <img class="footer__social-img" src="img/icons/youtube-icon.svg" alt="youtube"></a>
+            </li>
+        </ul>
+      </div>
+     </div>
+     </div>
+
+     <!-- Bottom -->
+     <div class="footer__bottom">
+      <a class="footer__bottom-link" href="#">Договір оферти</a>
+      <a class="footer__bottom-link" href="#">Політика обробки персональних даних</a>
+     </div>
+    </div>	
+  </footer>
+  </div> 
+  <!-- END/ wrapper -->
+<!-- Qquery-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<!-- Slick.min.js-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+/* Styles for the icon list */
+.icon-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.icon-list-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	font-size: 1rem;
+}
+
+.icon-list__title {
+	font-weight: 700;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+}
