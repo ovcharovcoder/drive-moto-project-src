@@ -253,7 +253,7 @@
 // Products section on main page
 .product-item {
 	height: 403px;
-	width: 270px;
+	width: 100%;
 	border: 1px solid $grey;
 	border-radius: 3px;
 	text-align: center;
@@ -262,6 +262,10 @@
 	&__wrapper {
 		position: relative;
 		width: 270px;
+		transition: all 0.3s ease;
+	}
+	&__wrapper.product-item__wrapper--list {
+		width: 100%;
 	}
 	&__title {
 		font-weight: normal;
@@ -442,7 +446,7 @@
 		margin-bottom: 50px;
 	}
 	&__filter-items,
-	&__filter-btn {
+	&__filter-btns {
 		display: flex;
 		align-items: center;
 		gap: 10px;
@@ -456,14 +460,12 @@
 		line-height: 17px;
 	}
 	&__filter-select {
-		border: 1px solid $grey;
 		font-size: 14px;
 		padding: 8px 20px;
 		margin-right: 20px;
 	}
 	&__inner {
 		display: flex;
-		justify-content: space-between;
 		gap: 10px;
 	}
 	&__inner-aside {
@@ -474,6 +476,22 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 30px;
 		margin-bottom: 70px;
+		transition: all 0.3s ease;
+		&.catalog__inner-list--list {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__filter-select-top {
+		border: 1px solid $grey;
+		padding: 0 5px;
+		width: 180px;
+		font-size: 14px;
+	}
+	&__filter-btn {
+		opacity: 0.3;
+	}
+	&__filter-btn--active {
+		opacity: 1;
 	}
 }
 
@@ -499,6 +517,262 @@
 		padding: 8px 16px;
 		color: $accent;
 	}
+}
+
+// Aside filter
+.aside-filter {
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__tab {
+		@include sf($weight: 400);
+		font-size: 16px;
+		line-height: 19px;
+		text-transform: uppercase;
+		color: $grey;
+		width: 50%;
+	}
+	&__tab.tab--active {
+		color: $default;
+		@include sf($weight: 700);
+	}
+	&__tab.tab--active span {
+		display: inline-block;
+		border-bottom: 2px solid $accent;
+		padding-bottom: 5px;
+	}
+	&__item-drop {
+		margin: 40px 0;
+	}
+	&__item-title {
+		@include sf($weight: 600);
+		font-size: 16px;
+		line-height: 19px;
+		padding-left: 26px;
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+	}
+	&__content-box {
+		width: 50%;
+		margin-bottom: 6px;
+	}
+	&__content-label {
+		font-size: 14px;
+		line-height: 17px;
+		cursor: pointer;
+	}
+	&__item-list {
+		margin: 60px 0 40px;
+	}
+	&__more {
+		width: 100%;
+	}
+	&__more-btn {
+		font-size: 14px;
+		color: $accent;
+		text-decoration: underline;
+		margin-top: 10px;
+	}
+	&__search {
+		width: 100%;
+		padding: 4px 20px;
+		border: 1px solid $grey;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	&__search::placeholder {
+		color: $grey;
+		font-size: 14px;
+	}
+	&__btn {
+		width: 100%;
+		background-color: $accent;
+		padding: 17px 85px;
+		text-transform: uppercase;
+		color: $white;
+		font-size: 15px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&__btn-reset {
+		color: $grey;
+		font-size: 13px;
+		border-bottom: 1px solid $grey;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+//Fiter for Бренд
+.filter {
+	&__item-list {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 2px solid $grey;
+		margin-bottom: 30px;
+	}
+	&__item-list-title {
+		@include sf($weight: 700);
+		font-size: 16px;
+		margin-left: 20px;
+	}
+	&__item-list-select {
+		@include barlow($weight: 400);
+	}
+}
+
+.jq-selectbox__select-text {
+	@include barlow($weight: 400);
+	font-size: 14px;
+}
+.jq-selectbox__select {
+	border-bottom-color: transparent;
+	border: none;
+	background: transparent;
+	box-shadow: none;
+	text-shadow: none;
+}
+.jq-selectbox__trigger-arrow {
+	display: none;
+}
+.jq-selectbox__trigger {
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	border-left: none;
+	background-image: url('../img/icons/arrow-black-down.svg');
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 8px;
+}
+.jq-selectbox li.selected,
+.jq-selectbox li:hover {
+	background-color: $light-grey;
+	color: $default;
+}
+.jq-selectbox__select:hover {
+	background: transparent;
+}
+.jq-selectbox__dropdown {
+	border-radius: 0;
+}
+
+// Aside filter price
+.jq-checkbox,
+.jq-radio {
+	background: $white;
+	width: 14px;
+	height: 14px;
+	border: 1px solid $grey;
+	border-radius: 1px;
+	box-shadow: none;
+	vertical-align: -2px;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+	background: $accent;
+	border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+	width: 8px;
+	height: 6px;
+	border: none;
+	transform: rotate(0);
+	margin: 4px 0 0 3px;
+	background-image: url('../img/icons/check-white-icon.svg');
+	background-repeat: no-repeat;
+}
+
+.jq-radio.checked .jq-radio__div {
+	border: no-repeat;
+	background: transparent;
+	box-shadow: none;
+}
+
+.irs--flat {
+	margin-top: 0;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+	@include barlow($weight: 400);
+	top: 50px;
+	padding: 0;
+	color: $default;
+	font-size: 14px;
+	line-height: 17px;
+	text-shadow: none;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+.irs--flat .irs-line {
+	top: 25px;
+	height: 1px;
+	background-color: $grey;
+	border-radius: 4px;
+}
+.irs--flat .irs-bar {
+	top: 60%;
+	height: 3px;
+	background-color: $accent;
+}
+.irs--flat .irs-handle:hover > i:first-child {
+	background-color: $accent;
+}
+.irs--flat .irs-handle > i:first-child {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50%;
+	width: 7px;
+	height: 7px;
+	margin-left: -1px;
+	border-radius: 50%;
+	background-color: $accent;
+}
+
+.irs-min::before,
+.irs-max::before {
+	padding-right: 10px;
+	color: $grey;
+	font-size: 14px;
+}
+
+.irs-min::before {
+	content: 'від';
+}
+
+.irs-max::before {
+	content: 'до';
+}
+
+.irs-min,
+.irs-max {
+	visibility: visible !important;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to {
+	color: white;
+	font-size: 12px;
+	padding: 1px 5px;
+	background-color: $accent;
+	border-radius: 4px;
+}
+
+.irs--flat .irs-from:before,
+.irs--flat .irs-to:before {
+	border-top-color: $accent;
 }
 
 // Footer

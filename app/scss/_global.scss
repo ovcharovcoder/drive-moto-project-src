@@ -290,3 +290,32 @@ body {
 		display: none;
 	}
 }
+
+.filter__item-drop-title {
+	position: relative;
+	cursor: pointer;
+}
+
+.filter__item-drop-title::before {
+	position: absolute;
+	content: '';
+	top: 30%;
+	left: 0;
+	background-image: url('../img/icons/arrow-black-down.svg');
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 8px;
+	transform: rotate(0deg);
+}
+
+.filter__item-drop-title--active::before {
+	transform: rotate(180deg);
+}
+
+.irs--flat {
+	width: 100%;
+}
+
+li.aside-filter__item-drop::marker {
+	display: none !important;
+}
